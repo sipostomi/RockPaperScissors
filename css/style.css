@@ -1,0 +1,67 @@
+h1{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	font-size: 2rem;
+}
+
+h2{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 1.5rem;
+}
+
+.game-area{ /* Középre igazítás */
+	width: 50%; /* Hogy ne jelenjen meg az alsó scrollbar */
+	margin: auto;
+	text-align: center;	
+}
+
+.results{
+	height: 100px; /* Hogy ne ugráljon */
+}
+
+.player-select img{
+	width: 100px;
+}
+
+.player-choice-icons{
+	padding: 20px 0px 0px 0px;
+	height: 60px; /* Hogy ne ugráljon */
+}
+
+.player-choice-icons img{
+	width: 50px;
+}
+
+.player-choice-icons img:hover{
+	width: 60px;
+	cursor: pointer;
+}
+
+.machine-select img{
+	width: 100px;
+}
+
+.counter-div p{
+	background-color:  #8c8c8c;
+	display: inline-block;
+	padding: 10px;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	border-radius: 10px;
+}
+
+footer{
+	text-align: center;
+}
+
+footer p{
+	border-radius: 10px;
+	background-color: black;
+	display: inline-block;
+	padding: 10px;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+}
