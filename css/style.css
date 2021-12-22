@@ -10,14 +10,14 @@ h2{
 	font-size: 1.5rem;
 }
 
-.game-area{ /* Középre igazítás */
-	width: 50%; /* Hogy ne jelenjen meg az alsó scrollbar */
+.game-area{ 
+	width: 50%; 
 	margin: auto;
 	text-align: center;	
 }
 
 .results{
-	height: 100px; /* Hogy ne ugráljon */
+	height: 100px; 
 }
 
 .player-select img{
@@ -26,7 +26,7 @@ h2{
 
 .player-choice-icons{
 	padding: 20px 0px 0px 0px;
-	height: 60px; /* Hogy ne ugráljon */
+	height: 60px; 
 }
 
 .player-choice-icons img{
