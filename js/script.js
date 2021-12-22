@@ -12,33 +12,33 @@ ko.addEventListener("click", stoneSelect);
 papir.addEventListener("click", paperSelect);
 ollo.addEventListener("click", scissorsSelect);
 
-let playerCounting = 0; /* Lettel működik csak, consttal nem */
+let playerCounting = 0; /* It works only let */
 let machineCounting = 0;
 
-//Választások
+/* Choice */
 
 function stoneSelect(){
 	image.setAttribute("src", "img/kő.png");
-	const valami = machineSelect();
-	image2.setAttribute("src", "img/"+valami+".png");
-	gameText.innerText = "Te: kő, ellenfeled: " + valami;
-	koEllenorzes(valami);
+	const machSel = machineSelect();
+	image2.setAttribute("src", "img/"+machSel+".png");
+	gameText.innerText = "Te: kő, ellenfeled: " + machSel;
+	koEllenorzes(machSel);
 }
 
 function paperSelect(){
 	image.setAttribute("src", "img/papír.png");
-	const valami = machineSelect();
-	image2.setAttribute("src", "img/"+valami+".png");
-	gameText.innerText = "Te: papír, ellenfeled: " + valami;
-	papirEllenorzes(valami);
+	const machSel = machineSelect();
+	image2.setAttribute("src", "img/"+machSel+".png");
+	gameText.innerText = "Te: papír, ellenfeled: " + machSel;
+	papirEllenorzes(machSel);
 }
 
 function scissorsSelect(){
 	image.setAttribute("src", "img/olló.png");
-	const valami = machineSelect();
-	image2.setAttribute("src", "img/"+valami+".png");
-	gameText.innerText = "Te: olló, ellenfeled: " + valami;
-	olloEllenorzes(valami);
+	const machSel = machineSelect();
+	image2.setAttribute("src", "img/"+machSel+".png");
+	gameText.innerText = "Te: olló, ellenfeled: " + machSel;
+	olloEllenorzes(machSel);
 }
 
 function machineSelect(){
@@ -46,12 +46,12 @@ function machineSelect(){
 	return lehetosegek[Math.floor(Math.random()*lehetosegek.length)];
 }
 
-// Ellenőrzések
+/* Check */
 
-function koEllenorzes(valami){ 
-	if(valami==="kő"){
+function koEllenorzes(machSel){ 
+	if(machSel==="kő"){
 		resultText.innerText = "Döntetlen";
-	} else if (valami ==="papír"){
+	} else if (machSel ==="papír"){
 		resultText.innerText = "Vesztettél!";
 		machineCounting++;
 		mcounter.innerText = machineCounting + " pont"; 
@@ -62,10 +62,10 @@ function koEllenorzes(valami){
 	}
 }
 
-function papirEllenorzes(valami){ 
-	if(valami==="papír"){
+function papirEllenorzes(machSel){ 
+	if(machSel==="papír"){
 		resultText.innerText = "Döntetlen";
-	} else if (valami ==="olló"){
+	} else if (machSel ==="olló"){
 		resultText.innerText = "Vesztettél!";
 		machineCounting++;
 		mcounter.innerText = machineCounting + " pont"; 
@@ -76,10 +76,10 @@ function papirEllenorzes(valami){
 	}
 }
 
-function olloEllenorzes(valami){
-	if(valami==="olló"){
+function olloEllenorzes(machSel){
+	if(machSel==="olló"){
 		resultText.innerText = "Döntetlen";
-	} else if (valami ==="kő"){
+	} else if (machSel ==="kő"){
 		resultText.innerText = "Vesztettél!";
 		machineCounting++;
 		mcounter.innerText = machineCounting + " pont"; 
